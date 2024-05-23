@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  box-shadow: 0px 0px 15px;
+  height: 3em;
+}
+
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  padding-top: 1em;
+  padding-inline-start: 3em;
+}
+
+h3 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.productsContainer p,
+.detailContainer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4em;
+  gap: 5em;
+}
+
+.productsContainer .productCard {
+  box-shadow: 0px 0px 20px;
+  border-radius: 2%;
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-size: 1em;
+}
+
+strong.title {
+  font-size: 1.5em;
+}
+
+.productsContainer .productCard .description {
+  overflow: hidden;
+  height: 5em;
+  margin-top: 1em;
+  margin-inline: 1em;
+}
+
+.productsContainer .productCard img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.productsContainer .productCard .details {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: beige;
+  border-radius: 0 0 2% 2%;
+}
+
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.detailContainer .productCard {
+  background-color: beige;
+  box-shadow: 0px 0px 20px;
+  border-radius: 2%;
+  height: fit-content;
+  width: 75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-size: 1em;
+}
+
+.detailContainer .productCard .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.detailContainer .productCard .details .description{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-inline: 5em;
+}
