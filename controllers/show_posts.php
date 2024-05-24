@@ -2,22 +2,9 @@
 
 require_once '../models/post_management.php';
 
-//$wordLimit = 19;
-
 echo "<div class='productsContainer'>";
 
 foreach(GetPostInfo() as $product){
-
-    //var_dump(str_word_count($product['description'], 1));
-
-
-    //var_dump($wordArray = explode(" ", $product['description']));
-
-    //echo $wordArray = strlen($product['description'], 1);
-
-    // if(count($wordArray) > $wordLimit){
-    //     $product['description'] = substr($product['description'], 0 , 100) . " ...";
-    // }
 
     echo"
         <a href='../views/show_card.php?&id=" . $product['id_logement'] . "'>

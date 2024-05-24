@@ -91,14 +91,12 @@ if (isset($_FILES['image']) && $_FILES['image']['size'] != 0) {
 } else {
     $inputDatas['image'] = $_POST['oldImage'];
 
-    //header('location: ../views/add_post_form.php');
 }
 
 if(unlink($uploadFolder . $_POST['oldImage'])){
 
 }
 
-//var_dump($inputDatas);
 
 UpdatePost($_GET['id'],$inputDatas);
 
