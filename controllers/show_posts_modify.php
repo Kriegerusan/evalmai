@@ -30,7 +30,7 @@ foreach(GetPostInfo() as $product){
                 <p>" . $product['adresse'] . "<br>" . $product['cp'] . " - " . $product['ville'] ."</p>
                 <p><strong>" . $product['surface'] . " m²<br>" . $product['prix'] . " €" . "</strong></p>
                 <div class=description>
-                    <p>" . $product['description'] . "</p>
+                    <p>" . mb_strimwidth($product['description'],0,100," ...") . "</p>
                 </div>
                 
                 <div class=buttonPanel>

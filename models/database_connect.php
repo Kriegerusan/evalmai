@@ -14,7 +14,7 @@ function AutoConnectDatabase(){
 
 
 //se connecte a la DB en rentrant les info de co manuellement
-function ConnectDatabase($protocol, $server, $port = null, $database, $user, $password = null){
+function ConnectDatabase($protocol, $server, $database, $user, $password = null){
     $connectionData = "$protocol:host=$server;dbname=$database";
     $pdo = new PDO($connectionData,$user,$password);
 
