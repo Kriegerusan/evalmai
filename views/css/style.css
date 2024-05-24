@@ -139,6 +139,11 @@ strong.title {
   font-size: 1em;
 }
 
+.detailContainer .productCard img{
+  width: 90%;
+  padding:2em;
+}
+
 .detailContainer .productCard .details {
   display: flex;
   flex-direction: column;
