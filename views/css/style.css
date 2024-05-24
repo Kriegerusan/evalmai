@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: bisque;
 }
 
 a {
@@ -31,6 +32,26 @@ h3 {
   margin-bottom: 0.3em;
 }
 
+form{
+  padding-inline: 15em;
+  margin-top: 5em;
+  color: darkgray;
+}
+
+button{
+  border: 0;
+  background: none;
+  color: darkgray;
+  box-shadow: 0px 0px 1px;
+}
+
+fieldset{
+  background-color: beige;
+  box-shadow: 5px 5px 15px;
+  border-style: none;
+  border-radius: 1em;
+}
+
 .productsContainer p,
 .detailContainer p {
   margin-top: 0;
@@ -56,6 +77,7 @@ h3 {
   align-items: center;
   position: relative;
   font-size: 1em;
+  color: darkgray;
 }
 
 strong.title {
@@ -85,6 +107,21 @@ strong.title {
   border-radius: 0 0 2% 2%;
 }
 
+
+.productsContainer .productCard .details .buttonPanel{
+  gap: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.productsContainer .productCard .details .buttonPanel button{
+  border: 0;
+  background: none;
+  color: darkgray;
+  box-shadow: 0px 0px 1px;
+  
+}
+
 .detailContainer {
   display: flex;
   justify-content: center;
@@ -104,6 +141,7 @@ strong.title {
   font-size: 1em;
 }
 
+
 .detailContainer .productCard .details {
   display: flex;
   flex-direction: column;
@@ -115,4 +153,24 @@ strong.title {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-inline: 5em;
+}
+
+.fieldContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.fieldContainer .row{
+  display: grid;
+  grid-template-columns: 0.5fr .75fr;
+}
+
+
+.fieldContainer .row button{
+  width: 10em;
+  border: 0;
+  background: none;
+  color: darkgray;
+
 }

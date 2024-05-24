@@ -1,5 +1,5 @@
-<?php
 
+<?php
 require_once '../models/post_management.php';
 
 //$wordLimit = 19;
@@ -20,21 +20,31 @@ foreach(GetPostInfo() as $product){
     // }
 
     echo"
-        <a href='../views/show_card.php?&id=" . $product['id_logement'] . "'>
-        <div class='productCard'>
+        
+        <div class=productCard>
             <img src=../uploads/" . $product['photo'] . ">
-            <div class='details'>
-                <strong class='title'>" . $product['titre'] . "</strong>
+            <div class=details>
+                <strong class=title>" . $product['titre'] . "</strong>
                 <br>
                 <strong>" . $product['type'] . "</strong>
                 <p>" . $product['adresse'] . "<br>" . $product['cp'] . " - " . $product['ville'] ."</p>
                 <p><strong>" . $product['surface'] . " m²<br>" . $product['prix'] . " €" . "</strong></p>
-                <div class='description'>
+                <div class=description>
                     <p>" . $product['description'] . "</p>
-                </div>  
+                </div>
+                
+                <div class=buttonPanel>
+                <a href=../views/show_modify_post_form.php?&id=".$product['id_logement'].">
+                    <button>Modifier</button>
+                </a>
+                <a href=../controllers/post_delete.php?&id=".$product['id_logement'].">
+                    <button>Supprimer</button>
+                </a>
             </div>
+            </div>
+            
         </div>
-        </a>
+        
     ";
 }
 

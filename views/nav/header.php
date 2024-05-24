@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../views/css/style.css">
 </head>
-<body>
+
 <header>
     <nav>
         <ul>
@@ -17,8 +17,10 @@
             <li>
                 <a href="add_post_form.php">Ajout Annonce</a>
             </li>
+            <li>
+                <a href="modify_post.php">Modifier Annonce</a>
+            </li>
 
         </ul>
     </nav>
 </header>
-</body>

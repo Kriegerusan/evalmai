@@ -96,3 +96,35 @@ function DeletePost($postId){
 
 }
 
+function UpdatePost($postId, $updateDatas){
+    $pdo = AutoConnectDatabase();
+
+    $req = $pdo->prepare(
+        "UPDATE logement SET
+            titre = :titre,
+            adresse = :adresse,
+            ville = :ville,
+            cp = :cp,
+            surface = :surface,
+            prix = :prix,
+            photo = :photo,
+            type = :type,
+            description = :description
+        WHERE id_logement = :id;"
+    );
+
+    $req->bindValue(":titre",$updateDatas['title']);
+    $req->bindValue(":adresse",$updateDatas['address']);
+    $req->bindValue(":ville",$updateDatas['city']);
+    $req->bindValue(":cp",$updateDatas['postal']);
+    $req->bindValue(":surface",$updateDatas['surface']);
+    $req->bindValue(":prix",$updateDatas['price']);
+    $req->bindValue(":photo",$updateDatas['image']);
+    $req->bindValue(":type",$updateDatas['type']);
+    $req->bindValue(":description",$updateDatas['description']);
+    $req->bindValue(":id",$postId);
+
+    $req->execute();
+
+    $req->closeCursor();
+}
