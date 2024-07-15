@@ -94,6 +94,7 @@ strong.title {
 .productsContainer .productCard img {
   width: 100%;
   border-radius: 2%;
+  height: 60%;
 }
 
 .productsContainer .productCard .details {
